@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --default-red: #e50914;
+  --hover: #9e0910;
+  --default-white: #fff;
+  --grey-border: #605f5e;
+  --email-background: #000000ab;
+  --hor-rule: #232323;
+  --default-black: #000;
+  --text-blue: #0066dc;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.section1 {
+  width: 100vw;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(./assets/images/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  margin: 0.625rem 6.25rem;
+  width: 10rem;
+}
+.netflix {
+  width: 100%;
+  overflow: hidden;
+}
+nav a {
+  margin: 5px 100px;
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: var(--default-red);
+  color: var(--default-white);
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: var(--hover);
+}
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--default-white);
+  height: 85vh;
+  position: relative;
+}
+
+.main-page h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  margin: 30px 0px;
+}
+.main-page p {
+  font-weight: 400;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+input[type="email"] {
+  background-color: var(--email-background);
+  padding: 15px;
+  border-radius: 5px;
+  margin-right: 7px;
+  color: var(--default-white);
+  border: 1px solid var(--grey-border);
+  font-size: 18px;
+  width: 400px;
+}
+
+button {
+  background-color: var(--default-red);
+  padding: 15px;
+  color: var(--default-white);
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  width: 150px;
+}
+
+button:hover {
+  background-color: var(--hover);
+}
+
+.hr {
+  width: 100%;
+  height: 0.5rem;
+  position: absolute;
+  bottom: 0.5rem;
+  background-color: var(--hor-rule);
+}
+
+.hr2 {
+  width: 100%;
+  height: 0.5rem;
+  position: absolute;
+  bottom: -32.5rem;
+  background-color: var(--hor-rule);
+}
+
+.hr3 {
+  width: 100%;
+  height: 0.5rem;
+  position: absolute;
+  bottom: -63.4rem;
+  background-color: var(--hor-rule);
+}
+
+.hr4 {
+  width: 100%;
+  height: 0.5rem;
+  position: absolute;
+  bottom: -63.4rem;
+  background-color: var(--hor-rule);
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--default-black);
+}
+
+.section-1-1 {
+  padding: 70px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-1-1-text {
+  gap: 25px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  color: var(--default-white);
+  height: 60vh;
+}
+
+.section-1-1-text h2 {
+  font-size: 2.9rem;
+  font-weight: 800;
+}
+
+.section-1-1-text p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.section-1-1-img {
+  width: 50%;
+  /* width: 2rem; */
+  display: flex;
+  position: relative;
+}
+
+.section-1-1-img video {
+  width: 22rem;
+  position: absolute;
+  top: 73px;
+  left: 60px;
+}
+
+.section-1-1-img img {
+  z-index: 1;
+  width: 30rem;
+}
+
+.section2 {
+  height: 80vh;
+  width: 100%;
+  color: var(--default-white);
+  background-color: var(--default-black);
+}
+
+.section-2-2 {
+  margin-top: -180px;
+  padding: 70px 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-2-2-text {
+  z-index: 1;
+  gap: 25px;
+  width: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: var(--default-white);
+  margin-right: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-2-2-text h2 {
+  flex-wrap: wrap;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.section-2-2-text p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.section-2-2-img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.section-2-2-img img {
+  width: 30rem;
+  margin-left: 60px;
+}
+
+.border-gif {
+  width: 20rem;
+  height: 6rem;
+  background-color: var(--default-black);
+  position: absolute;
+  top: 246px;
+  left: 190px;
+  border: 1px solid var(--grey-border);
+  border-radius: 10px;
+}
+
+.border-content {
+  padding: 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.border-gif img {
+  width: 3.5rem;
+  height: 4.5rem;
+  margin: 5px;
+}
+
+#downloader {
+  width: 3rem;
+  height: 3rem;
+}
+
+.stranger-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.stranger-text .text1 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stranger-text .text2 {
+  color: var(--text-blue);
+}
+
+.section3 {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--default-black);
+  color: var(--default-white);
+}
+
+.section3-text {
+  margin-right: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 0 50px;
+  width: 450px;
+}
+
+.section3-text h2 {
+  flex-wrap: wrap;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.section3-text p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.section3-box {
+  width: 100px;
+  height: 100px;
+}
+/* CSS code before media queries */
+
+@media (max-width: 768px) {
+  /* Styles for screens up to 768px wide */
+
+  .section-1-1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .section-1-1-text,
+  .section-1-1-img {
+    width: 100%;
+  }
+
+  .section-1-1-img img {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .section-1-1-img video {
+    position: static;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
+  }
+
+  .section-2-2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .section-2-2-text,
+  .section-2-2-img {
+    width: 100%;
+  }
+
+  .section-2-2-img img {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
